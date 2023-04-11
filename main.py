@@ -17,7 +17,7 @@ class HangMan():
 
     def get_words(self):
         try:
-            with open("day7_hangman/word_list.txt", "r") as f:
+            with open("word_list.txt", "r") as f:
                 self.word_list = f.read().splitlines()
         except FileNotFoundError:
             import requests
@@ -83,7 +83,6 @@ class HangMan():
 
 def main():
     game_on = HangMan()
-    # print(ascii_art.logo)
     while game_on.won != True and game_on.lost != True:
         game_on.display()
         game_on.get_guess_compute()
