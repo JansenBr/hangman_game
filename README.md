@@ -1,4 +1,4 @@
-<h3>Hangman word guessing game</h3>
+<h1>Hangman word guessing game</h1>
 
 This project is a terminal based word guessing game.
 
